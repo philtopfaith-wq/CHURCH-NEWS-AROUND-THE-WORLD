@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Cinzel", "Newsreader", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF8F5;
+  color: #1C1917;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom editorial styling */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Drop cap for long form editorial with bold crimson flair */
+.editorial-dropcap::first-letter {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 0.85;
+  float: left;
+  margin-top: 0.15rem;
+  margin-right: 0.65rem;
+  font-weight: 700;
+  color: #DC2626;
+}
+
+/* Smooth line clamps and balanced headlines */
+.balance-text {
+  text-wrap: balance;
+}
+
+/* Accessible focus ring with bright cardinal red */
+:focus-visible {
+  outline: 2px solid #DC2626;
+  outline-offset: 2px;
+}
+
+/* Vibrant cardinal red subtle gradients */
+.bg-crimson-gradient {
+  background: linear-gradient(135deg, #B91C1C 0%, #DC2626 50%, #EF4444 100%);
+}
+
+.bg-crimson-subtle {
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.08) 0%, rgba(254, 242, 242, 0.6) 100%);
+}
+
+

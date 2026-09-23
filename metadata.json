@@ -1,0 +1,6 @@
+{
+  "name": "Ecclesia News – Global Church & Faith Chronicle",
+  "description": "A modern, browser-based church news aggregator delivering verified global church updates, Christian ministry reports, and faith journalism. Created by Aboluwarin Temitope (08166102920).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
